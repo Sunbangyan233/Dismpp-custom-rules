@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--此文件用于保存程序的清理规则-->
+<Data>
+  <CleanCollection4>
+      <Item Name="#[BETA]Microsoft Edge 缓存">
+       <Description>#Edge在日常运行中留下的缓存文件，清除后会重新生成。在Github上报告问题>/Sunbangyan233/Dismpp-Custom-Rules</Description>
+        <Group>#缓存文件</Group>
+       <Scan>
+        <Activate>
+          <General RootPath="%SystemDrive%\Users\*\AppData\Local\Microsoft\Edge\User Data\Default\Service Worker\CacheStorage"/>
+          <General RootPath="%SystemDrive%\Users\*\AppData\Local\Microsoft\Edge\User Data\GrShaderCache"/>
+          <General RootPath="%SystemDrive%\Users\*\AppData\Local\Microsoft\Edge\User Data\Default\Service Worker\ScriptCache"/>
+          <General RootPath="%SystemDrive%\Users\*\AppData\Local\Microsoft\Edge\User Data\Default\"  Flags="Directory">
+          <Query>cache</Query>
+          <Query>*cache</Query>
+        </Activate>
+       </Scan>
+      </Item>
+  </CleanCollection4>
+  <SystemOptimization>
+  </SystemOptimization>
+</Data>
