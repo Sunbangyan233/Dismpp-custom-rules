@@ -2,13 +2,14 @@
 <Data>
   <CleanCollection4>
       <Item Name="#[BETA]NT QQ临时数据">
-       <Description>#QQ运行时产生的临时文件和日志，增加了对NT QQ的支持。在Github上报告问题>/Sunbangyan233/Dismpp-Custom-Rules</Description>
+       <Description>#NT版QQ运行中产生的临时文件、日志、更新安装包缓存等。在Github上报告问题>/Sunbangyan233/Dismpp-Custom-Rules</Description>
         <Group>#临时文件</Group>
        <Scan>
         <Activate>
           <General RootPath="%SystemDrive%\Users\*\Documents\Tencent Files\*\nt_qq\nt_data\log"/>
           <General RootPath="%SystemDrive%\Users\*\Documents\Tencent Files\*\nt_qq\nt_data\log-cache"/>
           <General RootPath="%SystemDrive%\Users\*\Documents\Tencent Files\*\nt_qq\nt_temp"/>
+          <General RootPath="%SystemDrive%\Users\AppData\Roaming\QQ\tmp\"/>
           <General RootPath="%SystemDrive%\Users\*\AppData\Local\Tencent\QQGuild\Logs"/>
           <General RootPath="%SystemDrive%\Users\*\AppData\Roaming\Tencent\Users\*\QQ\WinTemp"/>
           <General RootPath="%SystemDrive%\Users\*\AppData\Roaming\qq_guild\"  Flags="Directory"/>
